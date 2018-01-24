@@ -1,0 +1,361 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/add_product"
+    android:weightSum="1">
+
+    <ProgressBar
+        android:id="@+id/dashboard_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+
+
+    <ScrollView
+        android:id="@+id/add_product_form_scv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/product_adding_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/product_name" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:id="@+id/product_categories" />
+
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/manufacturer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/manufacturer_details"
+                    android:inputType="textCapWords"
+                    android:maxLines="3"
+                    android:singleLine="false" />
+
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/price"
+                    android:inputType="textCapWords"
+                    android:maxLines="3"
+                    android:singleLine="false" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/take_image_from_camera_one"
+                    android:layout_marginTop="10dp"
+                    android:onClick="selectImage"
+                    android:text="@string/product_image_one"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#2d4bcf"
+                    android:textColor="#fefcfc"
+                    android:paddingStart="10sp"
+                    android:paddingEnd="10sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView android:id="@+id/product_image_one"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:contentDescription="@string/product_image_one"
+                android:visibility="visible"
+                android:maxWidth="@dimen/abc_action_bar_content_inset_material" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/take_image_from_camera_two"
+                    android:layout_marginTop="10dp"
+                    android:onClick="selectImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#2d4bcf"
+                    android:textColor="#fefcfc"
+                    android:text="@string/product_image_two"
+                    android:paddingStart="10sp"
+                    android:paddingEnd="10sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView android:id="@+id/product_image_two"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:contentDescription="@string/product_image_two"
+                android:visibility="visible"
+                />
+
+            <!--<android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/take_image_from_camera_three"
+                    android:layout_marginTop="10dp"
+                    android:onClick="selectImage"
+                    android:text="@string/product_image_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#2d4bcf"
+                    android:textColor="#fefcfc"
+                    android:paddingStart="10sp"
+                    android:paddingEnd="10sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView android:id="@+id/product_image_three"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:contentDescription="@string/product_image_three"
+                android:visibility="visible"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/take_image_from_camera_four"
+                    android:layout_marginTop="10dp"
+                    android:onClick="selectImage"
+                    android:text="@string/product_image_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#2d4bcf"
+                    android:textColor="#fefcfc"
+                    android:paddingStart="10sp"
+                    android:paddingEnd="10sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView android:id="@+id/product_image_four"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:contentDescription="@string/product_image_four"
+                android:visibility="visible"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/take_image_from_camera_five"
+                    android:layout_marginTop="10dp"
+                    android:onClick="selectImage"
+                    android:text="@string/product_image_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#2d4bcf"
+                    android:textColor="#fefcfc"
+                    android:paddingStart="10sp"
+                    android:paddingEnd="10sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView android:id="@+id/product_image_five"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:contentDescription="@string/product_image_five"
+                android:visibility="visible"
+                />-->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/competitor_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/competitor_one"
+                    android:inputType="textCapWords"
+                    android:maxLines="3"
+                    android:editable="false"
+                    android:singleLine="false" />
+
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/competitor_one_man"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/competitor_one_man"
+                    android:inputType="textCapWords"
+                    android:maxLines="3"
+                    android:singleLine="false" />
+
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/competitor_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/competitor_two"
+                    android:inputType="textCapWords"
+                    android:editable="false"
+                    android:maxLines="3"
+                    android:singleLine="false" />
+
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/competitor_two_man"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/competitor_two_man"
+                    android:inputType="textCapWords"
+                    android:maxLines="3"
+                    android:singleLine="false" />
+
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <!--<android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/competitor_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/competitor_three"
+                    android:inputType="textCapWords"
+                    android:maxLines="3"
+                    android:singleLine="false" />
+
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/competitor_three_man"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/competitor_three_man"
+                    android:inputType="textCapWords"
+                    android:maxLines="3"
+                    android:singleLine="false" />
+
+            </android.support.design.widget.TextInputLayout>-->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <Button
+                android:id="@+id/submit_new_product"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/submit_product"
+                android:textStyle="bold"
+                android:background="#2d4bcf"
+                android:textColor="#fefcfc" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

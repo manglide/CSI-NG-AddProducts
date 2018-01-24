@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">AddProducts</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="product_name">Enter Product Name</string>
+    <string name="add_a_new_product">Add A New Product</string>
+    <string name="manufacturer_details">Enter Manufacturer</string>
+    <string name="enter_categories_list">Select Category Below</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="like">Like</string>
+    <string name="dislike">Dislike</string>
+    <string name="Neutral">I Dont Know</string>
+    <string name="likeordislike">Like or Dislike</string>
+    <string name="productcategory">Category</string>
+    <string name="product">Product</string>
+    <string name="rating">Rating</string>
+    <string name="usercomments">Comments</string>
+    <string name="enterusercomments">Tap to enter user Comments</string>
+    <string name="enter_user_mic_comments">Tap on mic to speak</string>
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="tap_on_mic">Tap on mic to speak</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="action_settings">Sync</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="product_image_one">Product Image 1</string>
+    <string name="product_image_two">Product Image 2</string>
+    <string name="product_image_three">Product Image 3</string>
+    <string name="product_image_four">Product Image 4</string>
+    <string name="product_image_five">Product Image 5</string>
+    <string name="competitor_one">Competitor 1</string>
+    <string name="competitor_one_man">Competitor 1 Manufacturer</string>
+    <string name="competitor_two">Competitor 2</string>
+    <string name="competitor_two_man">Competitor 2 Manufacturer</string>
+    <string name="competitor_three">Competitor 3</string>
+    <string name="competitor_three_man">Competitor 3 Manufacturer</string>
+    <string name="submit_product">Submit Product</string>
+    <string name="submit_product_review">Submit</string>
+    <string name="price">Price of Item</string>
+    <string name="aboutproduct">About Product</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="addressofmanufacturer">Address</string>
+    <string name="productingredients">Ingredients</string>
+    <string name="permission_read_phone_state_rationale">Read Phone State</string>
+    <string-array name="products_categories_array">
+        <item>Select Product Category</item>
+        <item>Agriculture</item>
+        <item>ICT</item>
+        <item>Construction and Real Estate</item>
+        <item>Oil and Gas</item>
+        <item>Natural Resources</item>
+        <item>HealthCare</item>
+        <item>Industrial Goods</item>
+        <item>Services</item>
+        <item>Financial Services</item>
+        <item>Conglomerates</item>
+        <item>Consumer Goods</item>
+    </string-array>
+</resources>
