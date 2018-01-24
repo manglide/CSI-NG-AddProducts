@@ -5,7 +5,7 @@ import android.content.Context;
 import android.support.multidex.MultiDex;
 
 /**
- * Created by NiyiDev on 4/16/2017.
+ * Created by manglide on 4/16/2017.
  */
 public class ApplicationName extends Application {
     private static Context context;

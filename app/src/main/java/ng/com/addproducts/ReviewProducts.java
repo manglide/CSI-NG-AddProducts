@@ -1,7 +1,7 @@
 package ng.com.addproducts;
 
 /**
- * Created by NiyiDev on 4/22/2017.
+ * Created by manglide on 4/22/2017.
  */
 
 import android.content.Context;

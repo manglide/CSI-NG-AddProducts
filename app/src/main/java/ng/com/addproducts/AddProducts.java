@@ -11,7 +11,7 @@ import java.io.ByteArrayOutputStream;
 
 
 /**
- * Created by NiyiDev on 4/16/2017.
+ * Created by manglide on 4/16/2017.
  */
 public class AddProducts extends AsyncTask<Object, Void, Boolean>  {
 

@@ -1,7 +1,7 @@
 package ng.com.addproducts;
 
 /**
- * Created by NiyiDev on 5/2/2017.
+ * Created by manglide on 5/2/2017.
  */
 
 import android.annotation.SuppressLint;

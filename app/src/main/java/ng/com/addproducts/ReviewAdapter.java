@@ -18,7 +18,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 /**
- * Created by Adeyemi Salau on 4/23/2017.
+ * Created by manglide on 4/23/2017.
  */
 public class ReviewAdapter extends BaseAdapter implements ListAdapter {
     private ArrayList<String> id_list = new ArrayList<String>();

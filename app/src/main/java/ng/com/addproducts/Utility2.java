@@ -1,7 +1,7 @@
 package ng.com.addproducts;
 
 /**
- * Created by NiyiDev on 4/14/2017.
+ * Created by manglide on 4/14/2017.
  */
 import android.Manifest;
 import android.annotation.TargetApi;
@@ -14,9 +14,6 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 
-/**
- * Created by Shreya Kotak on 12/05/16.
- */
 public class Utility2 {
 
     public static final int MY_PERMISSIONS_REQUEST_READ_PHONE_STATE = 0;

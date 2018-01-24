@@ -1,7 +1,7 @@
 package ng.com.addproducts;
 
 /**
- * Created by NiyiDev on 4/11/2017.
+ * Created by manglide on 4/11/2017.
  */
 public class User {
     private int id;

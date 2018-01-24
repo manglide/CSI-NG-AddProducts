@@ -17,7 +17,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 /**
- * Created by NiyiDev on 4/23/2017.
+ * Created by manglide on 4/23/2017.
  */
 public class AskAdapter extends BaseAdapter implements ListAdapter {
     private ArrayList<String> id_list = new ArrayList<String>();

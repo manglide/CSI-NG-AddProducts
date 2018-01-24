@@ -66,9 +66,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
-
-//import im.delight.android.location.SimpleLocation;
-
+/*
+* Created by manglide on 4/11/2017.
+*/
 public class Dashboard extends AppCompatActivity   {
 
     /**
